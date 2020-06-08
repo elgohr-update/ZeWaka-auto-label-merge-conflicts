@@ -36,13 +36,13 @@ jobs:
         with:
           CONFLICT_LABEL_NAME: "has conflicts"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MAX_RETRIES: 5 //Optional
-          WAIT_MS: 5000 //Optional
+          MAX_RETRIES: 5
+          WAIT_MS: 5000
 ```
 
 The label from step 1 should be referenced in the parameter `CONFLICT_LABEL_NAME`
 
-Take a look at [this repo](https://github.com/mschilde/auto-label-merge-conflicts/blob/master/%2Egithub/workflows/label_merge_conflicts.yml) for an example setup.
+Take a look at [this repo](https://github.com/zewaka/auto-label-merge-conflicts/blob/master/%2Egithub/workflows/label_merge_conflicts.yml) for an example setup.
 
 ## Limitations
 
