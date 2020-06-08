@@ -36,6 +36,8 @@ jobs:
         with:
           CONFLICT_LABEL_NAME: "has conflicts"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAX_RETRIES: 5 //Optional
+          WAIT_MS: 5000 //Optional
 ```
 
 The label from step 1 should be referenced in the parameter `CONFLICT_LABEL_NAME`
