@@ -11,7 +11,7 @@ on:
       - v*
 
 env:
-  IMAGE_NAME: autolabelconflict
+  IMAGE_NAME: auto-label-merge-conflicts
 
 jobs:
   # Run tests.
