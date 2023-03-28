@@ -47,7 +47,7 @@ jobs:
         run: docker build . --file Dockerfile --tag $IMAGE_NAME
 
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: zewaka/auto-label-merge-conflicts
           username: ${{ secrets.DOCKERHUB_USER }}
